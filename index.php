@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="S.Scheffler, S.Hae(?), J.Anders">
+    <meta name="author" content="S.Scheffler, J.Anders">
     <meta name="date" content="2017-11-12">
     <meta name="robots" content="noindex,nofollow">
     <title>Bookshop</title>
