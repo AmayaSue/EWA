@@ -1,0 +1,174 @@
+fieldset{
+    border: none;
+    float: center;
+}
+label{
+    width: 10em;
+    display: block;
+    float: left;
+}
+
+
+/* *** Navbar *** */
+ul{
+    display: flex;
+    flex-flow: row;
+    list-style-type: none;
+    margin: 0 ;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    border-radius: 25px;
+    border-top: 1px solid dimgray;
+}
+a{
+    text-decoration: none;
+    color:#f5deb3;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+li a{
+
+    display: block;
+    color:#f5deb3;
+    border-right: 1px solid dimgray;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;  
+}
+
+li a:hover{
+    background-color: #111;
+}
+
+
+.mobile-ul {
+    display:none;
+}
+
+.dropdown-ul{
+    display: flex;
+    flex-flow: column;
+}
+
+li.dropdown-li a{
+    border: 0px;
+}
+
+.dropdown-content{
+    display: none;
+}
+
+.dropdown-li:hover .dropdown-content{
+    display: block;
+}
+
+
+/* *** Seitenaufbau *** */
+body {
+    display: flex;  
+    flex-flow: wrap; 
+    max-width: 60em;
+    margin: 0 auto;
+    background-color: black;
+    color:#f5deb3;
+}
+
+header{
+    flex: 1 100%;
+    margin-top:5px; 
+    padding: 5px;
+    border-radius: 25px;
+    border-top: 1px solid dimgray;
+    background-color:  #333;
+
+}
+nav{
+    flex: 1 100%;
+    margin-top:5px;
+}
+
+article {
+    flex: 3 1 0%;
+    margin-top:5px;
+    margin-right: 5px;
+    padding: 8px;
+    border-radius: 25px;
+    border-top: 1px solid dimgray;
+    background-color:  #333;
+}
+
+aside {
+    flex: 1 1 0%; 
+    margin-top:5px;
+    padding: 5px;
+    border-radius: 25px;
+    border-top: 1px solid dimgray;
+    background-color:  #333;  
+}
+
+footer{
+    flex: 1 100%;
+    margin-top:5px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 25px;
+    border-top: 1px solid dimgray;
+    background-color:  #333;
+}
+
+@media screen and (max-width:750px){
+
+    li {
+        border-top: 1px solid dimgray;
+    }
+
+    .normal-ul{
+        display: none;
+    }
+    
+    .mobile-ul{
+        display: block;
+    }
+    
+    body{
+
+        margin: 20px;
+        display:flex;  
+    }
+    header{
+        flex: 1 100%;
+        order: 1;
+    }
+    
+    nav{
+        flex: 1 100%;
+        order: 2; 
+    }
+    
+    article{
+        flex: 1 100%;
+        order: 3;
+        margin-right: 0;
+    }
+    
+    aside{
+        flex: 1 100%;
+        order: 4;
+    }
+    footer{
+        flex: 1 100%;
+        order: 5; 
+        text-align:left;
+    }
+    
+}
+
+@media screen and (max-width: 380px){
+    header{
+        display: none;
+    }
+    
+}
